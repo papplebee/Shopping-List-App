@@ -1,0 +1,255 @@
+/*
+	Title: Main CSS Document for Shopping List App;
+	Project: Papplebee's Shopping List App;
+	Author: Peter Applebee;
+	Version: 1.0;
+	Date: 16/08/2014;
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF CSS RESET ============================================= */
+
+body {
+	background-color: #000;
+	margin: 0;
+	padding: 0;
+	font-family: cursive;
+}
+
+
+
+#wrapper {
+/*	background-image: url('images/fridgedoor.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat; */
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#wrapper > img {
+	width: 100%;
+}
+
+/*============================================================
+SHOPPING LIST PAD
+============================================================*/
+
+#shopping-list-app {
+	width: 400px;
+	min-height: 300px;
+	height: 90%;
+	background-color: #FFFBC9;
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	box-shadow: 0 0 5px #000;
+}
+
+#pad-top {
+	width: 100%;
+	height: auto;
+	box-shadow: 0 3px 2px #969477;
+}
+
+h1 {
+	text-align: center;
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 110%;
+}
+
+/*====================================================
+ADD ITEM FIELD & BUTTON
+====================================================*/
+
+
+
+#add-item-div {
+	width: 90%;
+	padding: 5% 7%;
+}
+
+.item-field {
+	width: 77%;
+	height: 25px;
+/*	border: 1px solid #969256; */
+	border: 0;
+	border-bottom: 2px solid #969256;
+/*	border-radius: 10px; */
+	outline: none;
+	padding-left: 2.5%;
+	font-family: cursive;
+	background-color: rgba(255,255,255,0.0);
+}
+
+/*
+.item-field:hover {
+	border-color: #DED568;
+}
+*/
+.item-field:active, .item-field:focus {
+	outline: none;
+/*	border-color: #FFEC00;
+	box-shadow: 0 0 5px #DED568; */
+}
+
+
+.add-button {
+	width: 15%;
+	height: auto;
+	display: inline-block;
+	padding: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 2%;
+/*	border-radius: 10px;
+	border: 1px solid #969256; */
+	border: 0;
+	background-color: #FFFBC9;
+	font-family: cursive;
+	font-size: 100%;
+	color: #57531D;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: default;
+	outline: none;
+}
+
+.add-button:hover {
+/*	background-color: #DED568;
+	border-color: #DED568; */
+	color: #000;
+} 
+
+.add-button:active {
+	color: #fff;
+}
+/*
+a.add-button:active, a.add-button:focus {
+	position: relative;
+	background-color: #969256;
+	border-color: #969256;
+	color: #FFF;
+	outline: none;
+}
+*/
+
+/*=======================================================
+SHOPPING ITEM LIST
+=======================================================*/
+
+* {
+/*	outline: red 1px solid; */
+}
+
+.item {
+	margin: 10px 5%;
+/*	border-bottom: 1px solid #969256; */
+	overflow: hidden;
+}
+
+.btn {
+	border-radius: 100%;
+	border: 0;
+	width: 25px;
+	height: 25px;
+	opacity: 0.7;
+	outline: none;
+	background-color: rgba(0,0,0,0.0);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.btn:hover, .btn:active {
+	opacity: 1.0;
+}
+
+.tick {
+	float: left;
+	background-image: url('images/tick25.png');
+}
+
+.untick {
+	float: left;
+	background-image: url('images/untick25.png');
+}
+
+.untick:active {
+	float: left;
+	background-image: url('images/tick25.png');
+}
+
+
+.item p {
+	width: 80%;
+	float: left;
+	margin: 5px 2.5%;
+}
+
+.delete {
+	float: right;
+	background-image: url('images/deleteblack.png')
+}
+
+.delete:hover, .delete:active {
+	background-image: url('images/deletered.png')
+}
+
+.done {
+	opacity: 0.3;
+}
+
+
+
