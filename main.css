@@ -86,7 +86,7 @@ SHOPPING LIST PAD
 ============================================================*/
 
 #shopping-list-app {
-	width: 400px;
+	width: 40%;
 	min-height: 300px;
 	height: 90%;
 	background-color: #FFFBC9;
@@ -234,7 +234,7 @@ SHOPPING ITEM LIST
 
 
 .item p {
-	width: 80%;
+	width: 75%;
 	float: left;
 	margin: 5px 2.5%;
 }
