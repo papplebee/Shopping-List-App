@@ -230,7 +230,14 @@ ADD ITEM FIELD & BUTTON
 	background-color: #E3EFFF;
 	display: block;
 	outline: none;
+	border-color: #0047A3;
 }
+
+#notes-field:focus {
+	background-color: #FAFAFF;
+}
+
+
 
 /*
 a.add-button:active, a.add-button:focus {
@@ -314,6 +321,45 @@ SHOPPING ITEM LIST
 
 .done p {
 	text-decoration: line-through;
+}
+
+.extra-notes {
+	position: relative;
+	left: 25px;
+	font-size: 80%;
+	color: #666;
+	display: none;
+}
+
+.arrow-right {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-image: url('images/arrowcircleright25.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	opacity: 0.7;
+}
+
+.arrow-right:hover {
+	opacity: 1.0;
+}
+
+.arrow-down {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-image: url('images/arrowcircledown25.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	opacity: 0.7;
+	display: none;
+}
+
+.arrow-down:hover {
+	opacity: 1.0;
 }
 
 /*=======================================================
