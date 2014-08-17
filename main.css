@@ -58,21 +58,21 @@ table {
 /* END OF CSS RESET ============================================= */
 
 body {
-	background-color: #000;
+	background-color: #E3EFFF;
 	margin: 0;
 	padding: 0;
-	font-family: cursive;
+	font-family: sans-serif;
+	color: #000;
+
 }
-
-
 
 #wrapper {
 /*	background-image: url('images/fridgedoor.jpg');
 	background-size: 100%;
 	background-repeat: no-repeat; */
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
-	width: 100%;
+	width: 600px;
 	height: 100%;
 	position: relative;
 }
@@ -86,20 +86,16 @@ SHOPPING LIST PAD
 ============================================================*/
 
 #shopping-list-app {
-	width: 40%;
+	width: 100%;
 	min-height: 300px;
-	height: 90%;
-	background-color: #FFFBC9;
-	position: absolute;
-	top: 5%;
-	right: 5%;
-	box-shadow: 0 0 5px #000;
+	height: 100%;
+	margin-top: 50px;
+	position: relative;
 }
 
 #pad-top {
 	width: 100%;
 	height: auto;
-	box-shadow: 0 3px 2px #969477;
 }
 
 h1 {
@@ -117,65 +113,69 @@ ADD ITEM FIELD & BUTTON
 
 #add-item-div {
 	width: 90%;
-	padding: 5% 7%;
+	padding: 5% 5%;
+}
+
+#add-item-form {
+	margin: 0;
+	padding: 0;
+	height: 52px;
+	position: relative;
 }
 
 .item-field {
-	width: 77%;
-	height: 25px;
-/*	border: 1px solid #969256; */
-	border: 0;
-	border-bottom: 2px solid #969256;
-/*	border-radius: 10px; */
-	outline: none;
+	width: 89%;
+	height: 38px;
+	border: 1px solid #000;
+	border-radius: 10px 0 0 10px; 
+	padding: 0;
 	padding-left: 2.5%;
-	font-family: cursive;
+	margin: 0;
+	font-family: sans-serif;
+	font-size: 100%;
 	background-color: rgba(255,255,255,0.0);
+	display: inline-block;
+	outline: none;
 }
 
-/*
+
 .item-field:hover {
-	border-color: #DED568;
+	border-color: #0047A3;
 }
-*/
+
 .item-field:active, .item-field:focus {
-	outline: none;
-/*	border-color: #FFEC00;
-	box-shadow: 0 0 5px #DED568; */
-	border-bottom-color: #000;
+	background-color: #FAFAFF;
+	border-color: #0047A3;
 }
 
 
 .add-button {
-	width: 15%;
-	height: auto;
-	display: inline-block;
+	width: 50px;
+	height: 40px;
 	padding: 0;
-	margin-bottom: 0;
-	margin-top: 0;
-	margin-left: 2%;
-/*	border-radius: 10px;
-	border: 1px solid #969256; */
-	border: 0;
-	background-color: #FFFBC9;
-	font-family: cursive;
-	font-size: 100%;
-	color: #57531D;
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: bold;
+	margin: 0;
+	display: inline-block;
+	border: 1px solid #000;
+	border-radius: 0 10px 10px 0;
+	border-left-width: 0;
+	background-color: rgba(0,0,0,0.0);
+	background-image: url('images/crossblack.png');
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: center;
 	cursor: default;
+	position: absolute;
 	outline: none;
 }
 
 .add-button:hover {
-/*	background-color: #DED568;
-	border-color: #DED568; */
-	color: #000;
+	background-image: url('images/crosswhite.png');
+	background-color: #0047A3;
+	border-color: #0047A3;
 } 
 
 .add-button:active {
-	color: #fff;
+
 }
 /*
 a.add-button:active, a.add-button:focus {
