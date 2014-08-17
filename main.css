@@ -389,18 +389,34 @@ FOOTER & COPYRIGHT
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
 
 	#add-item-form {
-		width: 324px;
-		margin: 0 auto;
-		padding: 0;
-		height: 52px;
-		position: relative;
+		width: 405px;
+	}
+
+	#notes-div form {
+		width: 405px;
 	}
 
 	#list {
-		width: 360px;
+		width: 450px;
+	}
+
+}
+
+@media screen and (min-width: 1100px) {
+
+	#add-item-form {
+		width: 594px;
+	}
+
+	#notes-div form {
+		width: 594px;
+	}
+
+	#list {
+		width: 660px;
 	}
 
 }
