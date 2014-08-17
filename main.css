@@ -57,6 +57,10 @@ table {
 
 /* END OF CSS RESET ============================================= */
 
+* {
+/*	outline: red 1px solid; */
+}
+
 body {
 	background-color: #E3EFFF;
 	margin: 0;
@@ -69,12 +73,12 @@ body {
 #wrapper {
 /*	background-image: url('images/fridgedoor.jpg');
 	background-size: 100%;
-	background-repeat: no-repeat; */
+	background-repeat: no-repeat; 
 	margin: 0 auto;
 	padding: 0;
 	width: 600px;
 	height: 100%;
-	position: relative;
+	position: relative; */
 }
 
 #wrapper > img {
@@ -87,22 +91,25 @@ SHOPPING LIST PAD
 
 #shopping-list-app {
 	width: 100%;
-	min-height: 300px;
 	height: 100%;
-	margin-top: 50px;
+	margin: 0;
 	position: relative;
 }
 
 #pad-top {
-	width: 100%;
-	height: auto;
+	width: 90%;
+	height: 20px;
+	padding: 20px 5%;
+	background-color: #B5D5FF; */
 }
 
 h1 {
 	text-align: center;
 	padding: 10px;
 	text-transform: uppercase;
-	font-size: 110%;
+	font-weight: bold;
+	font-size: 150%;
+	color: #0047A3;
 }
 
 /*====================================================
@@ -113,31 +120,33 @@ ADD ITEM FIELD & BUTTON
 
 #add-item-div {
 	width: 90%;
-	padding: 5% 5%;
+	height: 40px;
+	padding: 20px 5% 30px 5%;
+	background-color: #B5D5FF;
 }
 
 #add-item-form {
-	margin: 0;
+	width: 60%;
+	margin: 0 auto;
 	padding: 0;
 	height: 52px;
 	position: relative;
 }
 
 .item-field {
-	width: 89%;
+	width: 87.5%;
 	height: 38px;
 	border: 1px solid #000;
-	border-radius: 10px 0 0 10px; 
+	border-radius: 20px 0 0 20px; 
 	padding: 0;
-	padding-left: 2.5%;
+	padding-left: 5%;
 	margin: 0;
 	font-family: sans-serif;
 	font-size: 100%;
-	background-color: rgba(255,255,255,0.0);
+	background-color: #E3EFFF;
 	display: inline-block;
 	outline: none;
 }
-
 
 .item-field:hover {
 	border-color: #0047A3;
@@ -148,7 +157,6 @@ ADD ITEM FIELD & BUTTON
 	border-color: #0047A3;
 }
 
-
 .add-button {
 	width: 50px;
 	height: 40px;
@@ -156,7 +164,7 @@ ADD ITEM FIELD & BUTTON
 	margin: 0;
 	display: inline-block;
 	border: 1px solid #000;
-	border-radius: 0 10px 10px 0;
+	border-radius: 0 20px 20px 0;
 	border-left-width: 0;
 	background-color: rgba(0,0,0,0.0);
 	background-image: url('images/crossblack.png');
@@ -177,6 +185,21 @@ ADD ITEM FIELD & BUTTON
 .add-button:active {
 
 }
+
+.border-toggle-blue {
+	border-color: #0047A3;
+}
+
+.border-toggle-blue-cross-blue {
+	border-color: #0047A3;
+	background-image: url('images/crossblue.png');
+}
+
+.border-toggle-blue-cross-blue-2 {
+	border-color: #0047A3;
+	background-image: url('images/crossblue.png');
+}
+
 /*
 a.add-button:active, a.add-button:focus {
 	position: relative;
@@ -193,6 +216,11 @@ SHOPPING ITEM LIST
 
 * {
 /*	outline: red 1px solid; */
+}
+
+#list {
+	width: 60%;
+	margin: 30px auto;
 }
 
 .item {
@@ -256,5 +284,45 @@ SHOPPING ITEM LIST
 	text-decoration: line-through;
 }
 
+/*=======================================================
+FOOTER & COPYRIGHT
+=======================================================*/
+
+#footer {
+	width: 90%;
+	padding: 40px 5%;
+	background-color: #B5D5FF; 
+	position: absolute;
+	bottom: 0px;
+}
+
+#footer p {
+	color: #0047A3;
+	text-align: center;
+}
+
+#footer a:link, #footer a:visited {
+	color: #0047A3;
+	text-decoration: none;
+}
+
+#footer a:hover, #footer a:active {
+	text-decoration: underline;
+}
 
 
+@media screen and (max-width: 600px) {
+
+	#add-item-form {
+		width: 324px;
+		margin: 0 auto;
+		padding: 0;
+		height: 52px;
+		position: relative;
+	}
+
+	#list {
+		width: 360px;
+	}
+
+}

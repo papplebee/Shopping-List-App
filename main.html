@@ -15,32 +15,37 @@
 		
 
 		<div id="shopping-list-app">
+			
 			<div id="pad-top">
 				<h1>Shopping List</h1>
 			</div>
 
 			<div id="add-item-div">
 				<form id="add-item-form">
-					<input class="item-field" type="text" name="shopping-item">
+					<input class="item-field" type="text" placeholder="Enter Item Here..." name="shopping-item">
 					
-					<button class="add-button"></button>
+					<button title="Add to List" class="add-button"></button>
 				</form>
 			</div>
 
 			<div id="list">
 				<div class="item">
-					<button class="btn untick"></button>
+					<button title="Tick" class="btn untick"></button>
 					<p>Add new items above</p>
-					<button class="btn delete"></button>
+					<button title="Delete" class="btn delete"></button>
 				</div>	
-				<div class="item done">
-					<button class="btn tick"></button>
-					<p>This is a completed item</p>
-					<button class="btn delete"></button>
-				</div>	
-				
 
+				<div class="item done">
+					<button title="Untick" class="btn tick"></button>
+					<p>This is a completed item</p>
+					<button title="Delete" class="btn delete"></button>
+				</div>	
 			</div>
+
+		</div>
+
+		<div id="footer">
+			<p>Designed and Built by <a href="mailto:peterapplebee@gmail.com">Peter Applebee</a> 2014</p>
 		</div>
 	</div>
 </body>
