@@ -200,6 +200,38 @@ ADD ITEM FIELD & BUTTON
 	background-image: url('images/crossblue.png');
 }
 
+#notes-div {
+	background-color: #B5D5FF;
+	width: 90%;
+	padding: 0 5% 30px 5%;
+	display: none;
+}
+
+.display-block {
+	display: block;
+}
+
+#notes-div form {
+	width: 60%;
+	margin: 0 auto;
+}
+
+#notes-field {
+	width: 90%;
+	max-width: 90%;
+	height: 100px;
+	border: 1px solid #000;
+	border-radius: 20px; 
+	padding: 10px;
+	padding-left: 5%;
+	margin: 0;
+	font-family: sans-serif;
+	font-size: 100%;
+	background-color: #E3EFFF;
+	display: block;
+	outline: none;
+}
+
 /*
 a.add-button:active, a.add-button:focus {
 	position: relative;

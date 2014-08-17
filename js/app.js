@@ -20,9 +20,10 @@ $(document).ready(function() {
 	.on('mouseleave', '.item-field', function() {
 		$(this).closest('form').find('.add-button').removeClass('border-toggle-blue-cross-blue');
 	});
-	//toggle blue border on button when item fielf focused
+	//toggle blue border on button when item field focused
 	$('.item-field').focusin(function () {
 		$(this).closest('form').find('.add-button').addClass('border-toggle-blue-cross-blue-2');
+		$(this).closest('.shopping-list-app').find('.notes-div').addClass('display-block');
 	})
 	.focusout(function () {
 		$(this).closest('form').find('.add-button').removeClass('border-toggle-blue-cross-blue-2');
