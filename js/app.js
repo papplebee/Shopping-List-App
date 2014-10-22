@@ -6,6 +6,9 @@ $(document).ready(function() {
 		var newNotes = $(this).closest('#shopping-list-app').find('#notes-field').val();
 		var newItemDiv = $('<div class="item"><button class="btn untick"></button><p>'+newItem+'</p><div class="arrow-right"></div><div class="arrow-down"></div><button title="Delete" class="btn delete"></button><p class="extra-notes">'+newNotes+'</p></div>');
 		$('#list').prepend(newItemDiv);
+		$('#shopping-list-app').find('#notes-div').slideUp(500);
+		$('.item-field').val("");
+		$('#notes-field').val("");
 	});
 
 	//toggle blue border on item field when hovering button
@@ -25,13 +28,11 @@ $(document).ready(function() {
 	//toggle blue border on button when item field focused and toggle notes field
 	$('.item-field').focusin(function () {
 		$(this).closest('form').find('.add-button').addClass('border-toggle-blue-cross-blue-2');
-		$(this).closest('#shopping-list-app').find('#notes-div').show();
+		$(this).closest('#shopping-list-app').find('#notes-div').slideDown(500);
 		$(this).closest('#add-item-div').css('padding-bottom','5px');
 	})
 	.focusout(function() {
 		$(this).closest('form').find('.add-button').removeClass('border-toggle-blue-cross-blue-2');
-		$(this).closest('#shopping-list-app').find('#notes-div').hide();
-		$(this).closest('#add-item-div').css('padding-bottom','30px');
 	});
 	$('#notes-div').focusin(function() {
 		$(this).show();
@@ -40,10 +41,11 @@ $(document).ready(function() {
 		$(this).closest('#shopping-list-app').find('.add-button').addClass('border-toggle-blue-cross-blue-2');
 	})
 	.focusout(function() {
-		$(this).hide();
+		$(this).slideUp(500);
 		$(this).closest('#shopping-list-app').find('#add-item-div').css('padding-bottom','30px');
 		$(this).closest('#shopping-list-app').find('.item-field').removeClass('border-toggle-blue');
 		$(this).closest('#shopping-list-app').find('.add-button').removeClass('border-toggle-blue-cross-blue-2');
+		$('#add-item-div').css('padding-bottom','30px');
 	});
 
 	//tick item on list
